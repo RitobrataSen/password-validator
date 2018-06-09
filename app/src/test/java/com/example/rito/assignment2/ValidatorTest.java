@@ -7,6 +7,11 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 public class ValidatorTest {
 
+
+    @After
+    public void afterTests(){
+        System.out.println("Password is Strong");
+    }
     @Test
     public void Validator_checkLength(){
         assertTrue(Validator.checkLength("HelloMyNameIs"));
@@ -31,8 +36,11 @@ public class ValidatorTest {
         assertTrue(Validator.checkNum(s));
     }
 
-    @After
-    public void afterTests(){
-        System.out.println("Password is Strong");
+
+
+    @Test
+    public void ValidateVowels(){
+        String s = "Hellouu1";
+        assertTrue(Validator.checkVowel(s));
     }
 }

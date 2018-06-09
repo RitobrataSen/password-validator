@@ -28,17 +28,35 @@ public class Validator {
         int numCount =0;
         boolean m = false;
 
-        for(int i=0;i<s.length();i++)
-            if(s.charAt(i)>=0 && s.charAt(i)<=9)
-                numCount+=1;
+        for(int i=0;i<s.length();i++) {
+            int a = Character.getNumericValue(s.charAt(i));
+            if (a >= 0 && a <= 9)
+                numCount++;
 
            /* if( Integer.parseInt(String.valueOf(s.charAt(i)))>=0 && Integer.parseInt(String.valueOf(s.charAt(i)))<=9)
                 numCount++;*/
-
-        if(numCount>=0)
+        }
+        if(numCount>0)
         return true;
         else
             return false;
+    }
+    public static boolean checkVowel(String s){
+        char[] vowels = {'a','e','i','o','u'};
+
+        for(int i=0;i<s.length();i++){
+            char c = s.charAt(i);
+            for(int k =0;k<vowels.length;k++){
+                if(c == vowels[k])
+                    vowCount++;
+            }
+        }
+        if(vowCount>=3)
+            return true;
+        else
+            return false;
+
+
     }
 
 }
