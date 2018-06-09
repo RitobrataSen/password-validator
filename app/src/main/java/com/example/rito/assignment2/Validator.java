@@ -44,6 +44,7 @@ public class Validator {
     public static boolean checkVowel(String s){
         char[] vowels = {'a','e','i','o','u'};
 
+        int vowCount =0;
         for(int i=0;i<s.length();i++){
             char c = s.charAt(i);
             for(int k =0;k<vowels.length;k++){
