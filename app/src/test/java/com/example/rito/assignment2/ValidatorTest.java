@@ -10,4 +10,11 @@ public class ValidatorTest {
     public void Validator_checkLength(){
         assertTrue(Validator.checkLength("HelloMyNameIs"));
     }
+
+    @Test
+    public void Validator_checkPassword(){
+        String s= "asdfghjkl";
+        assertTrue(Validator.checkPass(s));
+        assertTrue(Validator.checkLength(s));
+    }
 }

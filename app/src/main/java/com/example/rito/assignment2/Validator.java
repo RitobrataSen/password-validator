@@ -8,4 +8,10 @@ public class Validator {
         else
             return false;
     }
+    public static boolean checkPass(String s){
+        if(s.toLowerCase()!="password")
+            return true;
+        else
+            return false;
+    }
 }
