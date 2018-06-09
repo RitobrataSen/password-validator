@@ -1,4 +1,5 @@
 package com.example.rito.assignment2;
+import org.junit.After;
 import org.junit.Test;
 
 import java.util.regex.Pattern;
@@ -22,5 +23,16 @@ public class ValidatorTest {
     public void Validator_CheckStr(){
         String s = "hellomynameis";
         assertTrue(Validator.checkStr(s));
+    }
+
+    @Test
+    public void Validate_Num(){
+        String s= "Hello1";
+        assertTrue(Validator.checkNum(s));
+    }
+
+    @After
+    public void afterTests(){
+        System.out.println("Password is Strong");
     }
 }

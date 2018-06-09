@@ -23,4 +23,22 @@ public class Validator {
         else
             return false;
     }
+    public static boolean checkNum(String s){
+
+        int numCount =0;
+        boolean m = false;
+
+        for(int i=0;i<s.length();i++)
+            if(s.charAt(i)>=0 && s.charAt(i)<=9)
+                numCount+=1;
+
+           /* if( Integer.parseInt(String.valueOf(s.charAt(i)))>=0 && Integer.parseInt(String.valueOf(s.charAt(i)))<=9)
+                numCount++;*/
+
+        if(numCount>=0)
+        return true;
+        else
+            return false;
+    }
+
 }
