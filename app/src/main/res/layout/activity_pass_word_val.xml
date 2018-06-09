@@ -11,8 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPersonName"
-        android:text="Name"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="232dp" />
 
@@ -23,4 +23,12 @@
         android:text="Validate"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="299dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="366dp" />
 </android.support.constraint.ConstraintLayout>
