@@ -25,7 +25,7 @@ public class PassWordVal extends AppCompatActivity {
                 EditText et = (EditText) findViewById(R.id.editText);
                 String s = et.getText().toString();
 
-                String fail = "You need atleast 1 number, 3 vowels, 1 or more Capital Letters, length must be longer than 8 and it can not be password";
+                String fail = "PassWord is Weak";
                 String succ = "Password is strong";
                 if(Validator.checkStr(s))
                     tv.setText(succ);
