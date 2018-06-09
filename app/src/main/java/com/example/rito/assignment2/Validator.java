@@ -3,7 +3,7 @@ package com.example.rito.assignment2;
 public class Validator {
 
     public static boolean checkStr(String s){
-        if(checkLength(s) && checkPass(s))
+        if(checkLength(s) && checkPass(s) && checkCap(s) && checkNum(s) && checkVowel(s))
             return true;
         else
             return false;
@@ -58,6 +58,18 @@ public class Validator {
             return false;
 
 
+    }
+
+    public static boolean checkCap(String s){
+        int numCaps =0;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)>='A' && s.charAt(i)<='Z')
+                numCaps++;
+        }
+        if(numCaps>0)
+            return true;
+        else
+            return false;
     }
 
 }
